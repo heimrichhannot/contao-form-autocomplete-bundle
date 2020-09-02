@@ -60,7 +60,7 @@ class GetAttributesFromDcaListener
 
     public function getAutocompleteValueFromField(string $field, ?string $table = null)
     {
-        if (isset(static::$mappingCache[$field])) {
+        if (!$field || isset(static::$mappingCache[$field])) {
             return static::$mappingCache[$field];
         }
 
