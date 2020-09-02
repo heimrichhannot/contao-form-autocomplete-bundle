@@ -30,6 +30,7 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface
 
     public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig)
     {
-        $loader->load('@HeimrichHannotFormAutocompleteBundle/Resources/config/services.yml');
+        $loader->load('@HeimrichHannotFormAutocompleteBundle/Resources/config/config.yml');
+        $loader->load('@HeimrichHannotFormAutocompleteBundle/Resources/config/listeners.yml');
     }
 }

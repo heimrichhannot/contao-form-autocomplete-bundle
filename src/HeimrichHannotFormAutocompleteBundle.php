@@ -8,8 +8,13 @@
 
 namespace HeimrichHannot\FormAutocompleteBundle;
 
+use HeimrichHannot\FormAutocompleteBundle\DependencyInjection\FormAutocompleteExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class HeimrichHannotFormAutocompleteBundle extends Bundle
 {
+    public function getContainerExtension()
+    {
+        return new FormAutocompleteExtension();
+    }
 }

@@ -1,0 +1,235 @@
+huh_form_autocomplete:
+  mapping:
+    name:
+      synonyms:
+        - fullname
+    honorific-prefix:
+      synonyms:
+        - academic-title
+        - nobility-title
+        - title
+    given-name:
+      synonyms:
+        - firstname
+        - forename
+    additional-name:
+      synonyms:
+        - middle-name
+        - middle-initial
+        - initial
+    family-name:
+      synonyms:
+        - lastname
+        - surname
+    honorific-suffix:
+      synonyms:
+        - academic-degree
+        - extended-title
+    nickname:
+      synonyms:
+        - nick
+        - moniker
+        - cognomen
+        - sobriquet
+        - soubriquet
+        - byname
+    email:
+      synonyms:
+        - email-address
+        - mail
+    username:
+      synonyms:
+        - user
+    new-password:
+    current-password:
+      synonyms:
+        - password
+        - pass
+    organization-title:
+      synonyms:
+        - job-title
+        - job
+        - position
+    organization:
+      synonyms:
+        - company
+        - firm
+        - association
+        - team
+        - office
+        - bureau
+        - institution
+    street-address:
+      synonyms:
+        - address
+        - address-text
+        - additional-addresses
+        - street-number
+    address-line1:
+      synonyms:
+        - street
+        - street1
+    address-line2:
+      synonyms:
+        - street2
+    address-line3:
+      synonyms:
+        - street3
+    address-level4:
+      synonyms: []
+    address-level3:
+      synonyms: []
+    address-level2:
+      synonyms:
+        - city
+        - town
+        - village
+    address-level1:
+      synonyms:
+        - state
+        - post-town
+        - canton
+    country:
+      synonyms:
+        - country-code
+        - land
+        - nation
+    country-name:
+      synonyms:
+        - country-verbose
+    postal-code:
+      synonyms:
+        - postal
+        - postal-code
+        - postcode
+        - zip
+        - zipcode
+    cc-name:
+      synonyms:
+        - creditcard-fullname
+        - credit-fullname
+    cc-given-name:
+      synonyms:
+        - creditcard-firstname
+        - credit-firstname
+        - creditcard-forename
+        - credit-forename
+    cc-additional-name:
+      synonyms:
+        - creditcard-middle-name
+        - credit-middle-name
+        - creditcard-middle-initial
+        - credit-middle-initial
+        - creditcard-initial
+        - credit-initial
+    cc-family-name:
+      synonyms:
+        - creditcard-lastname
+        - credit-lastname
+        - creditcard-surname
+        - credit-surname
+    cc-number:
+      synonyms:
+        - creditcard-number
+        - credit-number
+    cc-exp:
+      synonyms:
+        - creditcard-exp
+        - credit-exp
+        - creditcard-expiration
+        - credit-expiration
+    cc-exp-month:
+      synonyms:
+        - creditcard-exp-month
+        - credit-exp-month
+        - creditcard-expiration-month
+        - credit-expiration-month
+    cc-exp-year:
+      synonyms:
+        - creditcard-exp-year
+        - credit-exp-year
+        - creditcard-expiration-year
+        - credit-expiration-year
+    cc-csc:
+      synonyms:
+        - csc
+        - card-security-code
+        - cvc
+        - card-validation-code
+        - cid
+        - card-identification
+        - cvv
+        - card-verification-value
+    cc-type:
+      synonyms:
+        - creditcard-type
+        - credit-type
+    transaction-currency:
+      synonyms:
+        - currency
+    transaction-amount:
+      synonyms: []
+    language:
+      synonyms:
+        - lang
+    bday:
+      synonyms:
+        - birthday
+        - date-of-birth
+    bday-day:
+      synonyms:
+        - day-of-birth
+    bday-month:
+      synonyms:
+        - month-of-birth
+    bday-year:
+      synonyms:
+        - year-of-birth
+    sex:
+      synonyms:
+        - gender
+    tel:
+      synonyms:
+        - phone
+        - telephone
+        - mobile
+        - mobile-phone
+        - fax
+    tel-country-code:
+      synonyms:
+        - phone-country-code
+        - telephone-country-code
+    tel-national:
+      synonyms:
+        - phone-national
+        - telephone-national
+    tel-area-code:
+      synonyms:
+        - phone-area-code
+        - telephone-area-code
+    tel-local:
+      synonyms:
+        - phone-local
+        - telephone-local
+    tel-extension:
+      synonyms:
+        - phone-extension
+        - telephone-extension
+    impp:
+      synonyms:
+        - instant-messenger
+        - instant-messenger-protocol
+        - im
+        - im-protocol
+    url:
+      synonyms:
+        - website
+        - web
+        - internet
+        - internet-address
+    photo:
+      synonyms:
+        - image
+        - picture
+        - avatar
+        - singleSRC
