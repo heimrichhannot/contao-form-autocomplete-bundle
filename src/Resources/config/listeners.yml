@@ -7,3 +7,7 @@ services:
 
   HeimrichHannot\FormAutocompleteBundle\EventListener\:
     resource: '../../EventListener/*'
+
+  HeimrichHannot\FormAutocompleteBundle\EventListener\AdjustFilterOptionsEventListener:
+    tags:
+      - { name: kernel.event_listener, event: huh.filter.event.adjust_filter_options_event, method: '__invoke' }
