@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2022-02-08
+
+- Changed: minimum contao version is now 4.9
+- Changed: supported symfony versions are `^4.4||^5.4`,
+- Fixed: config for symfony 4+
+
 ## [1.1.0] - 2021-08-31
 
 - Added: php8 support
