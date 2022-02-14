@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (c) 2020 Heimrich & Hannot GmbH
+ * Copyright (c) 2022 Heimrich & Hannot GmbH
  *
  * @license LGPL-3.0-or-later
  */
@@ -20,9 +20,9 @@ class AdjustFilterOptionsEventListener
         $filter = $filterConfig->getFilter();
 
         $field = $element->field ?: $element->name;
-        $dcaField = $GLOBALS['TL_DCA'][$filter['dataContainer']]['fields'][$field];
+        $dcaField = $GLOBALS['TL_DCA'][$filter['dataContainer']]['fields'][$field] ?? null;
 
-        if (!$dcaField['eval']['autocomplete']) {
+        if (!$dcaField || !isset($dcaField['eval']['autocomplete']) || !$dcaField['eval']['autocomplete']) {
             return;
         }
 
