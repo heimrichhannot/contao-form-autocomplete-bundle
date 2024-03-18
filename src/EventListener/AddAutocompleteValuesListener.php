@@ -9,10 +9,11 @@
 namespace HeimrichHannot\FormAutocompleteBundle\EventListener;
 
 use Contao\DataContainer;
+use Contao\Widget;
 use HeimrichHannot\UtilsBundle\Container\ContainerUtil;
 use HeimrichHannot\UtilsBundle\Dca\DcaUtil;
 
-class GetAttributesFromDcaListener
+class AddAutocompleteValuesListener
 {
     /**
      * @var array
@@ -56,6 +57,24 @@ class GetAttributesFromDcaListener
         }
 
         return $attributes;
+    }
+
+    /**
+     * @Hook("loadFormField")
+     */
+    public function onLoadFormField(Widget $objWidget, string $formId, array $arrData, \Contao\Form $form): Widget
+    {
+        if ($this->containerUtil->isBackend() || null === $objWidget->name) {
+            return $objWidget;
+        }
+
+        $autocompleteValue = $this->getAutocompleteValueFromField($objWidget->name);
+
+        if (false !== $autocompleteValue) {
+            $objWidget->addAttribute('autocomplete', $autocompleteValue);
+        }
+
+        return $objWidget;
     }
 
     public function getAutocompleteValueFromField(string $field, ?string $table = null)
