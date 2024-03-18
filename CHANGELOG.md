@@ -2,6 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2024-03-18
+- Added: support for form generator ([#2](https://github.com/heimrichhannot/contao-form-autocomplete-bundle/pull/2), [@amenk](https://github.com/amenk))
+
 ## [1.2.1] - 2022-02-14
 
 - Fixed: array index issues in php 8+
